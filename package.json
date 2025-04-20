@@ -1,0 +1,9 @@
+{
+    "name": "automated-weather-alert",
+    "version": "1.0.0",
+    "description": "A Python project for sending weather alerts",
+    "scripts": {
+      "dev": "python automated_weather_alerts.py"
+    }
+  }
+  
