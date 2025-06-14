@@ -1,1 +1,14 @@
+name: Run scheduled script
+on:
+  schedule:
+    -cron:'0,30 * * * *'
+jobs:
+  build:
+    run-on: ubuntu-latest
 
+    steps:
+      - name:Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run script
+        run: python automated_weather_alerts.py
